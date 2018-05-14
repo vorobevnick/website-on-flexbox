@@ -48,6 +48,66 @@ b, strong {
 	font-weight: bold;
 }
 
+.content {
+	max-width: 1170px;
+	margin: 0 auto;
+}
 
+a {
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+/* -------------- HEADER -------------- */
+header {
+	background-color: #000000;
+}
+
+.menu-desktop {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	margin-top: 29px;
+	margin-bottom: 40px;
+	&-link {
+		font-size: 36px;
+		color: #ffffff;
+		font-family: oswald-reg;
+		font-weight: bold;
+		transition: all .5s ease;
+		&:hover {
+			color: #ffffff;
+			opacity: .8;
+		}
+	}
+}
+
+.menu {
+	list-style-type: none;
+	margin-top: 35px;
+	&-item {
+		display: inline-block;
+		margin-right: 4px;
+		margin-left: 4px;
+		transition: all .3s ease;
+		&:last-child {
+			margin-right: 0;
+		}
+		&:hover {
+			background-color: $accent;
+		}
+	}
+	&-link {
+		padding: 10px 16px;
+		display: block;
+		color: #ffffff;
+		&:hover {
+			color: #ffffff;
+		}
+	}
+}
 
 @import "media"; // Always at the end
