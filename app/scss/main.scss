@@ -7,7 +7,7 @@
 }
 
 ::selection {
-	background-color: $accent;
+	background-color: #cccccc;
 	color: #fff;
 }
 
@@ -413,6 +413,8 @@ header {
 	justify-content: space-around;
 	margin-top: 60px;
 	margin-bottom: 80px;
+	padding-left: 20px;
+	padding-right: 20px;
 	&-item {
 		position: relative;
 		&:hover {
@@ -449,4 +451,91 @@ header {
 		}
 	}
 }
+
+/* -------------- PRICE -------------- */
+
+#price {
+	background-color: $accent;
+	padding: 1px;
+}
+
+.price {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 40px;
+	&-item {
+		width: 370px;
+		background: #d14343;
+		border: solid 1px #d14343;
+		text-align: center;
+		margin-bottom: 60px;
+		transition: .5s;
+		color: #ffffff;
+		&:hover {
+			background: transparent;
+			border: solid 1px #ffffff;
+			transition: .5s;
+			.button {
+				font-family: oswald-reg;
+				font-weight: bold;
+				font-size: 18px;
+				padding: 10px 23px;
+				width: 230px;
+				background-color: #ffffff;
+				color: #e25050;
+				transition: .5s;
+				text-decoration: none;
+			}
+		}
+		&__header {
+			font-family: oswald-reg;
+			font-weight: bold;
+			font-size: 18px;
+			text-transform: uppercase;
+			margin-top: 40px;
+		}
+		&__price {
+			font-family: oswald-reg;
+			font-weight: bold;
+			font-size: 36px;
+			margin-top: 50px;
+			margin-bottom: 50px;
+			position: relative;
+			&-sub {
+				position: absolute;
+				font-size: 14px;
+				top: 11px;
+			}
+		}
+		&__description {
+			font-family: open-sans-reg;
+			font-size: 14px;
+			line-height: 36px;
+			&:before {
+				content:'';
+				width: 10px;
+				height: 8px;
+				background:url(../img/arrow_price.png) no-repeat center center;
+				display: inline-block;
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+.button {
+	font-family: oswald-reg;
+	font-weight: bold;
+	display: block;
+	font-size: 18px;
+	padding: 10px 23px;
+	width: 230px;
+	margin: 20px auto 60px;
+	background-color: #e25050;
+	transition: .5s;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+
 @import "media"; // Always at the end
