@@ -1,47 +1,161 @@
 @import "vars";
 
-
 /*==========  Desktop First  ==========*/
-
-// ≥1200px
-@include media-breakpoint-down(lg) {
-	
+@media only screen and (max-width : 1600px) {
+  .slide-text {
+    bottom: 40%;
+    margin-left: 2%;
+    &__header {
+      font-size: 28px;
+    }
+    &__slogan {
+      font-size: 17px;
+    }
+  }
 }
 
-// ≥992px
-@include media-breakpoint-down(md) {
-
+@media only screen and (max-width : 1500px) {
+  .slide-text {
+    margin-left: 6%;
+    &__description {
+      bottom: 54px;
+    }
+    &__header {
+      font-size: 26px;
+    }
+    &__slogan {
+      font-size: 15px;
+      bottom: -57px;
+    }
+  }
 }
 
-// ≥768px
-@include media-breakpoint-down(sm) {
-
+@media only screen and (max-width : 1400px) {
+  .slide-text {
+    margin-left: 10%;
+    &__description {
+      bottom: 48px;
+    }
+    &__header {
+      font-size: 23px;
+    }
+    &__slogan {
+      font-size: 12px;
+      bottom: -52px;
+    }
+  }
 }
 
-// ≥576px
-@include media-breakpoint-down(xs) {
+@media only screen and (max-width : 1300px) {
+  .slide-text {
+    margin-left: 12%;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  .logo {
+    margin-left: 10px;
+  }
+
+  .slide-text {
+    margin-left: 16%;
+    &__description {
+      bottom: 39px;
+      padding: 9px 16px;
+    }
+    &__header {
+      font-size: 18px;
+      padding: 8px 9px 8px 13px;
+    }
+    &__slogan {
+      padding: 10px 19px 10px 13px;
+      bottom: -42px;
+    }
+  }
+}
+/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .menu-desktop {
+    display: none;
+  }
+
+  .menu-small {
+    display: flex;
+  }
+
+  .menu-hamburger:hover .menu-dropdown {
+    display: block;
+  }
+
+  .slide-text {
+    margin-left: 21%;
+    bottom: 20%;
+  }
+}
+/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .slide-text {
+    display: none;
+  }
+}
+/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
 
 }
+/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+/**/
 
 
 /*==========  Mobile First  ==========*/
 
-// ≤576px
-@include media-breakpoint-up(sm) {
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
 
 }
+/**/
 
-// ≤768px
-@include media-breakpoint-up(md) {
 
-}
-
-// ≤992px
-@include media-breakpoint-up(lg) {
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
 
 }
+/**/
 
-// ≤1200px
-@include media-breakpoint-up(xl) {
-	
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
 }
+/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+/**/
+
+
