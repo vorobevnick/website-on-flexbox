@@ -67,6 +67,14 @@ a {
 	margin-top: 60px;
 	text-transform: uppercase;
 	color: #202020;
+	&::after {
+		content: '';
+		width: 50px;
+		height: 1px;
+		background: #000;
+		display: block;
+		margin: 10px auto 60px;
+	}
 	&__red {
 		color: $accent;
 	}
@@ -81,9 +89,35 @@ a {
 	}
 	&__light {
 		color: #ffffff;
+		&::after {
+			content: '';
+			width: 50px;
+			height: 1px;
+			background: #fff;
+			display: block;
+			margin: 10px auto 60px;
+		}
 	}
 }
 
+.social-list {
+	padding-left: 0;
+	margin-left: -5px;
+	list-style: none;
+	color: #afafaf;
+  &__item {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+	&__link {
+		color: #afafaf;
+		transition: all .3s ease;
+		&:hover {
+			color: $accent;
+		}
+	}
+}
 /* -------------- HEADER -------------- */
 header {
 	background-color: #000000;
@@ -311,5 +345,59 @@ header {
 	}
 
 }
+
+/* -------------- TRAINERS -------------- */
+
+#trainers {
+	background: url(../img/bg_trainers.jpg);
+	padding: 1px;
+}
+
+.trainers {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	margin-bottom: 90px;
+	padding: 10px;
+	&-item {
+		width: 270px;
+		margin-right: 10px;
+		background: #ffffff;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+		&__last {
+			margin-right: 0;
+		}
+		&__name {
+			font-family: oswald-reg;
+			font-weight: bold;
+			font-size: 14px;
+			margin-top: 22px;
+			margin-left: 20px;
+			margin-bottom: 0;
+		}
+		&__profession {
+			font-family: oswald-reg;
+			font-size: 12px;
+			color: #afafaf;
+			margin-bottom: 22px;
+			margin-left: 21px;
+		}
+		&__description {
+			text-transform: none;
+			font-size: 13px;
+			line-height: 21px;
+			margin-left: 22px;
+			margin-right: 24px;
+			color: #777;
+		}
+		&__social {
+			margin-left: 45px;
+			margin-top: 70px;
+		}
+	}
+}
+
+
 
 @import "media"; // Always at the end
