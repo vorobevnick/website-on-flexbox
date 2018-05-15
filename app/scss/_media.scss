@@ -73,6 +73,15 @@
       bottom: -42px;
     }
   }
+  .services {
+    padding-left: 10px;
+    padding-right: 10px;
+    &-item {
+      &__last {
+        margin-right: 30px;
+      }
+    }
+  }
 }
 /**/
 
@@ -95,6 +104,11 @@
     margin-left: 21%;
     bottom: 20%;
   }
+  .services {
+    &-item {
+      margin-right: 20px;
+    }
+  }
 }
 /**/
 
@@ -104,13 +118,24 @@
   .slide-text {
     display: none;
   }
+  .services {
+    &-item {
+      margin-right: 10px;
+    }
+  }
+
 }
 /**/
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+  .services {
+    &-item {
+      width: 300px;
+      margin-right: 0;
+    }
+  }
 }
 /**/
 
