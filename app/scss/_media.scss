@@ -3,8 +3,8 @@
 /*==========  Desktop First  ==========*/
 @media only screen and (max-width : 1600px) {
   .slide-text {
-    bottom: 40%;
-    margin-left: 2%;
+    bottom: 200px;
+    margin-left: 4%;
     &__header {
       font-size: 28px;
     }
@@ -32,6 +32,7 @@
 
 @media only screen and (max-width : 1400px) {
   .slide-text {
+    margin-bottom: -2%;
     margin-left: 10%;
     &__description {
       bottom: 48px;
@@ -48,6 +49,7 @@
 
 @media only screen and (max-width : 1300px) {
   .slide-text {
+    margin-bottom: -5%;
     margin-left: 12%;
   }
 }
@@ -59,6 +61,7 @@
   }
 
   .slide-text {
+    margin-bottom: -7%;
     margin-left: 16%;
     &__description {
       bottom: 39px;
@@ -93,6 +96,29 @@
       //margin-right: 40px;
     }
   }
+
+  .slider-partners {
+    width: 850px;
+    padding-left: 80px;
+  }
+
+  .twit {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .contact-info {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .contact__header {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .copyright {
+    justify-content: space-around;
+  }
 }
 /**/
 
@@ -112,8 +138,8 @@
   }
 
   .slide-text {
-    margin-left: 21%;
-    bottom: 20%;
+    margin-left: 18%;
+    margin-bottom: -9%;
   }
   .services {
     &-item {
@@ -123,6 +149,15 @@
 
   .price-item {
     margin-right: 0;
+  }
+
+  .slider-partners {
+    width: 660px;
+    padding-right: 50px;
+    padding-left: 120px;
+  }
+  .twit {
+    justify-content: center;
   }
 }
 /**/
@@ -139,9 +174,38 @@
     }
   }
 
+  .slider-partners {
+    width: 250px;
+    padding-left: 40px;
+  }
+
+  .contact__input {
+    width: 100%;
+    margin-bottom: 5px;
+    margin-right: 0;
+  }
+  .contact__textarea {
+    width: 100%;
+  }
+  .contact-form {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .submit {
+    margin-top: 50px;
+    margin-left: 0;
+    &__description {
+      left: 0;
+      top: 65%;
+    }
+  }
 }
 /**/
-
+@media only screen and (max-width : 560px) {
+  .trainers-item {
+    margin-right: 0;
+  }
+}
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
@@ -151,8 +215,24 @@
       margin-right: 0;
     }
   }
+  .slider-partners {
+    width: 250px;
+  }
+  .phone-header {
+    font-size: 12px;
+    width: 150px;
+    &__phone {
+      width: 30px;
+      height: 30px;
+      margin-right: 20px;
+    }
+    .fas {
+      margin-top: 9px;
+      margin-left: 9px;
+    }
+  }
 }
-/**/
+
 
 
 /* Custom, iPhone Retina */
