@@ -382,6 +382,7 @@ header {
 #trainers {
 	background: url(../img/bg_trainers.jpg);
 	padding: 1px;
+    overflow: hidden;
 }
 
 .trainers {
@@ -482,6 +483,7 @@ header {
 #price {
 	background-color: $accent;
 	padding: 1px;
+    overflow: hidden;
 }
 
 .price {
